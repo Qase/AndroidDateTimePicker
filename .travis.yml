@@ -1,0 +1,11 @@
+language: android
+android:
+  components:
+    - android-26
+    - build-tools-27.0.3
+  licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+script:
+- ./gradlew assembleDebug

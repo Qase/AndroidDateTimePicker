@@ -1,0 +1,6 @@
+<resources>
+    <string name="datetimepicker_time">Čas</string>
+    <string name="datetimepicker_date">Datum</string>
+    <string name="datetimepicker_next">Další</string>
+    <string name="datetimepicker_close">Zavřít</string>
+</resources>
