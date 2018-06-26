@@ -2,5 +2,5 @@
     <string name="datetimepicker_time">Time</string>
     <string name="datetimepicker_date">Date</string>
     <string name="datetimepicker_next">Next</string>
-    <string name="datetimepicker_close">Close</string>
+    <string name="datetimepicker_close">Confirm</string>
 </resources>
