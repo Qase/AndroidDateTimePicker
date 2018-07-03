@@ -1,15 +1,14 @@
 language: android
 android:
   components:
-    - android-26
-    - build-tools-27.0.3
+  - android-26
+  - build-tools-27.0.3
   licenses:
-    - 'android-sdk-preview-license-.+'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+  - android-sdk-preview-license-.+
+  - android-sdk-license-.+
+  - google-gdk-license-.+
 script:
-- ./gradlew assembleDebug
-
+- "./gradlew assembleDebug"
 notifications:
   slack:
-    secure: Sp1ZxbPdp51rECamgDJi9h6V7xHUfV0N0Bj+v9qG4DQD2b6PbfMHLIXKPf7zXMKVTWnPVEzAu270vMSl+ICdwUaSwy1Jd50Fu66pHvd8GTpCpECgEtnnTM1hhkotS4tee7hjHmo9CfE7fbZqRjsx1aGEn9XIo4nKGzetA8/7Oj0SasEXDIxOFXNxWN23BdNf03oC0k878XGJ/ThhOXCPkzzcuxk65PQWSMPU+wNNKH7AVe8IyXQY0IG71rVa+rTYYCRMQFCtBRQktWSZJ7se7i78BKtey2+THeCwX7KYZZz6GfKAlRJtjits5ssrInIDJGOSOUjp4VK8cf4PPNtE0VIA9d64dZAkbHzJUXfGggfvR8+TonNCgpuP32bKCEOlrzit3kPAUPOlkyphOCB5BG6kt7xCmK1eMdEuSXYcI9TpwKYktJyg/aSySa10gKivteaVyZdplxHd0tscBTiKid05Y4fiYGD61gczUFwpH9AticLj3AOpVG1WLXq/a5
+    secure: E+pI7DLGpyqWwWn/ViQ+9YWmt+CSnCjGFwhJFF7cIp2tAdfasa23w4tDYkjsUD38oWyqrWOf4ZF3QojzDZgN82OpEHoBp7xcPD5UsUH1Qs1sYkWc1ePdmST/VpypBmdLqLj2lciMt9iaZ116mRqMtxWw6UfSx8m2une9/tKYoNLf4VmK3E97nMGkVnx5kk/XhkP8w66IWqQ8A/rtd1VbYfepYt26MX7s3pkesdQm3SdnQM/8XsS5EPrEZsaq3hKgODuGIJ4ypothNqPhXyN09A7b0j/IGoEfmktZqRVEYsY8XeodBoABYzH/TL0MTxM/IWQldjL+4eGfr1fCO/nPDMW6zo4Lj8Y3Wj3E3QSBslo/y+xeC+/XJPO+AipsUSMBcmOwfuEIs36nPwmS+kTQmzRKMdgDUlvDD9dmtsDYEskDDGK7pWN0Gg4Q+jThzLA7bO+bjNfbJa2vPYIuNMlUdNva0deQXZENJtSK9b4C6TnRfP8tNR4JKsx4xQnTjCR6zjpVbTBGDKJfquePImXzSArhHZo747BW/mYcXIpAql9/kj52pZNqnMgYau+FlDcfytlnCf9SPGMfvBt43jR0twfoAnRGoN8fZPjkQ5hXhfY5oGRN2Qzy4SFFlGBWN3yJF9ZhtVeaUeOBfmddsxMrddFn40smiCScnrMa6psvyrY=
