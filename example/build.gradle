@@ -10,7 +10,6 @@ android {
     defaultConfig {
         applicationId "wtf.qase.datetimepicker.example"
         minSdkVersion 15
-        targetSdkVersion target_sdk_version
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
