@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             "fragment_datepicker",
             callback,
             currentDate,
-            DateTimePickerDialog.DATE_TIME
+            DateTimePickerDialog.TIME_DATE
         )
     }
 }
