@@ -48,6 +48,7 @@ class DateTimePickerDialog : DialogFragment() {
         const val DATE_TIME: Int = 0
         const val TIME_ONLY: Int = 1
         const val DATE_ONLY: Int = 2
+        const val TIME_DATE: Int = 3
     }
 
     private var onSuccess: ((Date) -> Unit)? = null
@@ -68,6 +69,7 @@ class DateTimePickerDialog : DialogFragment() {
         val adapter = when (pickerType) {
             TIME_ONLY -> TimeOnlyPickerAdapter(childFragmentManager, initDate)
             DATE_ONLY -> DateOnlyPickerAdapter(childFragmentManager, initDate)
+            TIME_DATE -> DateTimePickerAdapter(childFragmentManager, initDate, false)
             else -> DateTimePickerAdapter(childFragmentManager, initDate)
         }
         view.viewPager.adapter = adapter
@@ -97,7 +99,7 @@ class DateTimePickerDialog : DialogFragment() {
     }
 
     private fun initNextButton() {
-        if (pickerType == DATE_TIME) {
+        if (pickerType == DATE_TIME || pickerType == TIME_DATE) {
             next.setText(R.string.datetimepicker_next)
             next.setOnClickListener {
                 tabLayout.getTabAt(1)?.select()
