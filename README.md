@@ -1,19 +1,43 @@
 [![Release](https://jitpack.io/v/Qase/AndroidDateTimePicker.svg)](https://jitpack.io/#Qase/AndroidDateTimePicker)
 [![Build Status](https://travis-ci.org/Qase/AndroidDateTimePicker.svg?branch=master)](https://travis-ci.org/Qase/AndroidDateTimePicker)
 [![codebeat badge](https://codebeat.co/badges/21bd2793-337f-43eb-b774-240aaa202819)](https://codebeat.co/projects/github-com-qase-androiddatetimepicker-master)
+[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maintainer: havlisimo](https://img.shields.io/badge/Maintainer-havlisimo-blue.svg)](mailto:tomas.havlicek@quanti.cz)
+[![Qase: AndroidDateTimePicker](https://img.shields.io/badge/Qase-AndroidDateTimePicker-ff69b4.svg)](https://github.com/Qase/AndroidDateTimePicker)
 
 # AndroidDateTimePicker
 
+Easy to use android date and time picker. 
+
+## Features
+* Very easy to use
+* Use both date and time or choose just one
+* Written in kotlin 
+* Sample [app](github/sampleApp.png) is ready to build
+
+
 ## Installation
 
-Project si hosted on [Jitpack](https://jitpack.io) so the basic installation is found [HERE](https://jitpack.io/#Qase/AndroidDateTimePicker).
+Click [HERE](https://jitpack.io/#Qase/AndroidDateTimePicker).
+
+## Code example
+```Kotlin
+val sdf = SimpleDateFormat("dd.MM.yyyy - HH:mm", Locale.getDefault())
+val dateText : String? = null
+
+val callback: (date: Date) -> Unit = { newDate ->
+    dateText = sdf.format(newDate)
+}
+
+DateTimePickerDialog.show(
+    supportFragmentManager,
+    "fragment_datepicker",              //tag for fragment manager
+    callback,                           //calback with selected date
+    Date(),                             //current date
+    DateTimePickerDialog.TIME_DATE      //choose one - DATE_TIME, TIME_ONLY, DATE_ONLY, TIME_DATE
+)
+```
 
 ## License
-
-Copyright 2018 Quanti s.r.o
-
-Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at 
-
-http://www.apache.org/licenses/LICENSE-2.0 
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+[MIT](https://github.com/nishanths/license/blob/master/LICENSE)
