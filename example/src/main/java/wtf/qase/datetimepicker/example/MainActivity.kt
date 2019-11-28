@@ -1,7 +1,7 @@
 package wtf.qase.datetimepicker.example
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import wtf.qase.datetimepicker.DateTimePickerDialog
 import java.text.SimpleDateFormat

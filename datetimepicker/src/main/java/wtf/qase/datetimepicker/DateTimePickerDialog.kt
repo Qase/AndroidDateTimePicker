@@ -1,16 +1,16 @@
 package wtf.qase.datetimepicker
 
 import android.app.Activity
-import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.TabLayout
-import android.support.v4.app.DialogFragment
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.ViewModelProviders
+import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.fragment_datetimepicker.*
 import kotlinx.android.synthetic.main.fragment_datetimepicker.view.*
 import wtf.qase.datetimepicker.adapter.DateOnlyPickerAdapter
@@ -31,7 +31,7 @@ class DateTimePickerDialog : DialogFragment() {
                 .show(fragment.fragmentManager, tag)
         }
 
-        fun show(fragmentManager: FragmentManager, tag: String,  onSuccess : (Date) -> Unit, initialDate: Date? = null, pickerType: Int = DATE_TIME) {
+        fun show(fragmentManager: FragmentManager, tag: String, onSuccess : (Date) -> Unit, initialDate: Date? = null, pickerType: Int = DATE_TIME) {
             createInstance(initialDate, pickerType)
                 .apply { setOnSuccess(onSuccess) }
                 .show(fragmentManager, tag)

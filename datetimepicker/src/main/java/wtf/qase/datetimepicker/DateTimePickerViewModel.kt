@@ -1,6 +1,6 @@
 package wtf.qase.datetimepicker
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import java.util.Date
 
 class DateTimePickerViewModel: ViewModel() {

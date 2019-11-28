@@ -1,7 +1,7 @@
 package wtf.qase.datetimepicker.adapter
 
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import android.view.ViewGroup
 import wtf.qase.datetimepicker.R
 import wtf.qase.datetimepicker.fragment.DatePickerFragment

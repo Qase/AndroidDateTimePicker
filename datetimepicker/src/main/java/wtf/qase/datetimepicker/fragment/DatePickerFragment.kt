@@ -1,7 +1,7 @@
 package wtf.qase.datetimepicker.fragment
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +10,7 @@ import wtf.qase.datetimepicker.R
 import java.util.Calendar
 import java.util.Date
 
-class DatePickerFragment : Fragment() {
+class DatePickerFragment : androidx.fragment.app.Fragment() {
 
     companion object {
         private const val ARG_INIT_DATETIME = "ARG_INIT_DATETIME"
