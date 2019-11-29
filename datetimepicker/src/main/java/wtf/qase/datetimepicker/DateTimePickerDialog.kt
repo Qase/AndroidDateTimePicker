@@ -28,7 +28,7 @@ class DateTimePickerDialog : DialogFragment() {
         fun show(fragment: Fragment, tag: String, requestCode: Int, initialDate: Date? = null, pickerType: Int = DATE_TIME) {
             createInstance(initialDate, pickerType)
                 .apply { setTargetFragment(fragment, requestCode) }
-                .show(fragment.fragmentManager, tag)
+                .show(fragment.requireFragmentManager(), tag)
         }
 
         fun show(fragmentManager: FragmentManager, tag: String, onSuccess : (Date) -> Unit, initialDate: Date? = null, pickerType: Int = DATE_TIME) {
